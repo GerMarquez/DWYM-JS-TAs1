@@ -1,12 +1,9 @@
-let personas = [
+const personas = [
     `Pablo`,`Clara`,`Carlos`,`Clarence`,`Pepe`,`Clarabella`
 ];
 let ul = document.getElementById("listado");
 personas.forEach(element => {
-    let li = document.createElement("li");
-    li.classList.add("listPerson");
-    li.appendChild(document.createTextNode(element));
-    ul.appendChild(li);
+    ul.innerHTML += `<li>${element}</li>`
 });
 
 let inputfield = document.getElementById('inputfield');
